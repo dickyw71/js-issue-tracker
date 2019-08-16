@@ -10,12 +10,10 @@
 </head>
 
 <body>
-    <header>
+    <main class="container">
         <h1>
             JS Issue Tracker <small>by Richard Wheatley</small>
         </h1>
-    </header>
-    <main class="container">
         <section class="jumbotron">
             <h3>Add a new issue</h3>
             <form id="issueInputForm">
@@ -23,6 +21,20 @@
                     <label for="issueDescInput">Description</label>
                     <input type="text" class="form-control" id="issueDescInput" placeholder="Enter issue description...">
                 </fieldset>
+                <fieldset class="form-group">
+                    <label for="issueSeverityInput">Severity</label>
+                    <select class="form-control" id="issueSeverityInput">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                </fieldset>
+                <fieldset class="form-group">
+                    <label for="issueAssignedTo">Assigned to</label>
+                    <input type="text" class="form-control" id="issueAssignedTo" placeholder="Enter resposible...">
+                </fieldset>
+                <button type="submit" class="btn btn-primary">Add</button>
+
             </form>
         </section>
     </main>
