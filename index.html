@@ -9,7 +9,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
-<body>
+<body onload="fetchIssues()">
     <div class="container">
         <h1>
             JS Issue Tracker <small>by Richard Wheatley</small>
@@ -31,7 +31,7 @@
                 </fieldset>
                 <fieldset class="form-group">
                     <label for="issueAssignedTo">Assigned to</label>
-                    <input type="text" class="form-control" id="issueAssignedTo" placeholder="Enter resposible...">
+                    <input type="text" class="form-control" id="issueAssignedTo" placeholder="Enter person resposible...">
                 </fieldset>
                 <button type="submit" class="btn btn-primary">Add</button>
             </form>
